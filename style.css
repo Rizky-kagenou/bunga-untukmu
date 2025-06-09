@@ -1,0 +1,509 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0; 
+    background: linear-gradient(rgb(0, 0, 0), rgb(36, 36, 36));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.flower{
+    transform: translate(0px, 200px);
+    height: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.rose{
+    height: 330px;
+    width: 90px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.rose2{
+    height: 330px;
+    width: 90px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transform: translate(70px, -320px) rotate(10deg);
+}
+
+.rose3{
+    height: 330px;
+    width: 90px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transform: translate(-70px, -650px) rotate(-10deg);
+}
+
+.rose-petal-1{
+    display: flex;
+    position: absolute;
+    background: rgb(254, 97, 97);
+    border-radius: 50%;
+    transform: translate(15px, 0px);
+    width: 60px;
+    height: 80px;
+    z-index: 1;
+}
+
+.rose-petal-2{
+    display: flex;
+    position: absolute;
+    background: rgb(250, 52, 52);
+    border-radius: 750% 0% 400% 100%;
+    transform: translate(20px, 5px) rotate(10deg);
+    width: 60px;
+    height: 80px;
+    z-index: 2;
+}
+
+.rose-petal-3{
+    display: flex;
+    position: absolute;
+    background: rgb(255, 17, 17);
+    border-radius: 0% 750% 100% 400%;
+    transform: translate(10px, 5px) rotate(-10deg);
+    width: 60px;
+    height: 80px;
+    z-index: 3;
+}
+
+.rose-petal-4{
+    display: flex;
+    position: absolute;
+    background: rgb(222, 1, 1);
+    border-radius: 750% 0% 400% 100%;
+    transform: translate(39px, 15px) rotate(20deg);
+    width: 60px;
+    height: 80px;
+    z-index: 4;
+}
+.rose-petal-5{
+    display: flex;
+    position: absolute;
+    background: rgb(182, 2, 2);
+    border-radius: 0% 750% 100% 400%;
+    transform: translate(-10px, 15px) rotate(-20deg);
+    width: 60px;
+    height: 80px;
+    z-index: 5;
+}
+
+.rose-stem{
+    display: flex;
+    position: absolute;
+    background: rgb(0, 190, 0);
+    width: 10px;
+    height: 250px;
+    transform: translate(40px, 80px);
+    z-index: 0;
+}
+
+.rose-leaf{
+    position: absolute;
+    background: green;
+    border-radius: 200% 0% 200% 0%;
+    width: 60px;
+    height: 30px;
+    transform: translate(45px, 100px);
+}
+
+.rose-leaf-2{
+    position: absolute;
+    background: green;
+    border-radius: 0% 200% 0% 200%;
+    width: 60px;
+    height: 30px;
+    transform: translate(-15px, 150px);
+}
+
+.rose2-petal-1{
+    display: flex;
+    position: absolute;
+    background: rgb(254, 97, 97);
+    border-radius: 50%;
+    transform: translate(15px, 0px);
+    width: 60px;
+    height: 80px;
+    z-index: 1;
+}
+
+.rose2-petal-2{
+    display: flex;
+    position: absolute;
+    background: rgb(255, 17, 17);
+    border-radius: 750% 0% 400% 100%;
+    transform: translate(20px, 5px) rotate(10deg);
+    width: 60px;
+    height: 80px;
+    z-index: 3;
+}
+
+.rose2-petal-3{
+    display: flex;
+    position: absolute;
+    background: rgb(250, 52, 52);
+    border-radius: 0% 750% 100% 400%;
+    transform: translate(10px, 5px) rotate(-10deg);
+    width: 60px;
+    height: 80px;
+    z-index: 2;
+}
+
+.rose2-petal-4{
+    display: flex;
+    position: absolute;
+    background: rgb(182, 2, 2);
+    border-radius: 750% 0% 400% 100%;
+    transform: translate(39px, 15px) rotate(20deg);
+    width: 60px;
+    height: 80px;
+    z-index: 5;
+}
+.rose2-petal-5{
+    display: flex;
+    position: absolute;
+    background: rgb(222, 1, 1);
+    border-radius: 0% 750% 100% 400%;
+    transform: translate(-10px, 15px) rotate(-20deg);
+    width: 60px;
+    height: 80px;
+    z-index: 4;
+}
+
+.rose2-stem{
+    display: flex;
+    position: absolute;
+    background: rgb(0, 190, 0);
+    width: 10px;
+    height: 250px;
+    transform: translate(40px, 80px);
+    z-index: 0;
+}
+
+.rose2-leaf{
+    position: absolute;
+    background: green;
+    border-radius: 200% 0% 200% 0%;
+    width: 60px;
+    height: 30px;
+    transform: translate(45px, 100px);
+}
+
+.rose3-petal-1{
+    display: flex;
+    position: absolute;
+    background: rgb(254, 97, 97);
+    border-radius: 50%;
+    transform: translate(15px, 0px);
+    width: 60px;
+    height: 80px;
+    z-index: 1;
+}
+
+.rose3-petal-2{
+    display: flex;
+    position: absolute;
+    background: rgb(250, 52, 52);
+    border-radius: 750% 0% 400% 100%;
+    transform: translate(20px, 5px) rotate(10deg);
+    width: 60px;
+    height: 80px;
+    z-index: 2;
+}
+
+.rose3-petal-3{
+    display: flex;
+    position: absolute;
+    background: rgb(255, 17, 17);
+    border-radius: 0% 750% 100% 400%;
+    transform: translate(10px, 5px) rotate(-10deg);
+    width: 60px;
+    height: 80px;
+    z-index: 3;
+}
+
+.rose3-petal-4{
+    display: flex;
+    position: absolute;
+    background: rgb(222, 1, 1);
+    border-radius: 750% 0% 400% 100%;
+    transform: translate(39px, 15px) rotate(20deg);
+    width: 60px;
+    height: 80px;
+    z-index: 4;
+}
+.rose3-petal-5{
+    display: flex;
+    position: absolute;
+    background: rgb(182, 2, 2);
+    border-radius: 0% 750% 100% 400%;
+    transform: translate(-10px, 15px) rotate(-20deg);
+    width: 60px;
+    height: 80px;
+    z-index: 5;
+}
+
+.rose3-stem{
+    display: flex;
+    position: absolute;
+    background: rgb(0, 190, 0);
+    width: 10px;
+    height: 250px;
+    transform: translate(40px, 80px);
+    z-index: 0;
+}
+
+.rose3-leaf{
+    position: absolute;
+    background: green;
+    border-radius: 0% 200% 0% 200%;
+    width: 60px;
+    height: 30px;
+    transform: translate(-15px, 100px);
+}
+
+#rose-petal-left{
+    animation: bloom-left 1s 3.5s backwards;
+    display: none
+}
+
+#rose2-petal-left{
+    animation: bloom-right 1s 3.5s backwards;
+    display: none
+}
+
+#rose3-petal-left{
+    animation: bloom-left 1s 3.5s backwards;
+    display: none
+}
+
+#rose-petal-right{
+    animation: bloom-right 1s 3.5s backwards;
+    display: none;
+}
+
+#rose2-petal-right{
+    animation: bloom-left 1s 3.5s backwards;
+    display: none;
+}
+
+#rose3-petal-right{
+    animation: bloom-right 1s 3.5s backwards;
+    display: none;
+}
+
+#rose-petal-in-left{
+    animation: bloom-in-left 1s 3.5s backwards;
+    display: none;
+}
+
+#rose2-petal-in-left{
+    animation: bloom-in-right 1s 3.5s backwards;
+    display: none;
+}
+
+#rose3-petal-in-left{
+    animation: bloom-in-left 1s 3.5s backwards;
+    display: none;
+}
+
+#rose-petal-in-right{
+    animation: bloom-in-right 1s 3.5s backwards;
+    display: none;
+}
+
+#rose2-petal-in-right{
+    animation: bloom-in-left 1s 3.5s backwards;
+    display: none;
+}
+
+#rose3-petal-in-right{
+    animation: bloom-in-right 1s 3.5s backwards;
+    display: none;
+}
+
+#rose-petal-center{
+    animation: bloom-center 1s 3.5s backwards, blinking 2s 2s infinite backwards alternate-reverse;
+    display: none;
+}
+
+#rose2-petal-center{
+    animation: bloom-center 1s 3.5s backwards, blinking 2s 3s infinite backwards alternate-reverse;
+    display: none;
+}
+
+#rose3-petal-center{
+    animation: bloom-center 1s 3.5s backwards, blinking 2s 1s infinite backwards alternate-reverse;
+    display: none;
+}
+
+#rose-stem{
+    animation: grow 5s 0.05s backwards;
+    display: none;
+}
+
+#rose2-stem{
+    animation: grow 5s 0.2s backwards;
+    display: none;
+}
+
+#rose3-stem{
+    animation: grow 5s  backwards;
+    display: none;
+}
+
+#rose-leaf{
+    animation: leaf-grow-right 1s 3s backwards;
+    display: none;
+}
+
+#rose-leaf-2{
+    animation: leaf2-grow-left 1s 3s backwards;
+    display: none;
+}
+
+#rose2-leaf{
+    animation: leaf-grow-right 1s 3s backwards;
+    display: none;
+}
+
+#rose3-leaf{
+    animation: leaf-grow-left 1s 3s backwards;
+    display: none;
+}
+
+@keyframes bloom-left {
+    0%{
+        transform: translate(30px, 15px) rotate(20deg) scale(0%);
+    }
+
+    100%{
+        transform: translate(-10px, 15px) rotate(-20deg) scale(100%);
+    }
+}
+
+@keyframes bloom-in-left {
+    0%{
+        transform: translate(40px, 5px) rotate(20deg) scale(0%);
+    }
+
+    100%{
+        transform: translate(10px, 5px) rotate(-10deg) scale(100%);
+    }
+}
+
+@keyframes bloom-right {
+    0%{
+        transform: translate(10px, 15px) rotate(-20deg) scale(0%);
+    }
+
+    100%{
+        transform: translate(40px, 15px) rotate(20deg) scale(100%);
+    }
+}
+
+@keyframes bloom-in-right {
+    0%{
+        transform: translate(5px, 5px) rotate(-20deg) scale(0%);
+    }
+
+    100%{
+        transform: translate(20px, 5px) rotate(10deg) scale(100%);
+    }
+}
+
+@keyframes bloom-center {
+    0%{
+        transform: translate(15px, 5px) scale(0%);
+        box-shadow: 0px 0px 0px ;
+    }
+
+    100%{
+        transform: translate(15px, 0px) scale(100%);
+    }
+}
+
+@keyframes blinking {
+    0%{
+        box-shadow: 0px 0px 50px white;
+    }
+    100%{
+        box-shadow: 0px 0px 100px white;
+    }
+}
+
+@keyframes grow {
+    0%{
+        background: rgb(139, 60, 0);
+        border-radius: 500% 500% 0% 0%;
+    }
+}
+
+@keyframes leaf-grow-right {
+    0%{
+        transform: translate(13px, 100px) rotate(-40deg) scale(0%);
+    }
+    100%{
+        transform: translate(45px, 100px) rotate(0deg) scale(100%);
+    }
+}
+
+@keyframes leaf-grow-left {
+    0%{
+        transform: translate(10px, 100px) rotate(40deg) scale(0%);
+    }
+    100%{
+        transform: translate(-15px, 100px) rotate(0deg) scale(100%);
+    }
+}
+
+@keyframes leaf2-grow-left {
+    0%{
+        transform: translate(10px, 150px) rotate(40deg) scale(0%);
+    }
+    100%{
+        transform: translate(-15px, 150px) rotate(0deg) scale(100%);
+    }
+}
+
+.btn button{
+    background-color: black;
+    border: 3px rgb(49, 49, 49) solid;
+    color: white;
+    font-size: 20px;
+    border-radius: 50px;
+    transform: translate(-95px, 500px);
+    position: absolute;
+    width: 100px;
+    height: 50px;
+}
+
+.btn button:hover{
+    background-color: rgb(13, 190, 255);
+    border: 3px rgb(0, 146, 204) solid;
+}
+.btn button:active{
+    background-color: white;
+    border: 5px gray solid;
+    color: black;
+}
